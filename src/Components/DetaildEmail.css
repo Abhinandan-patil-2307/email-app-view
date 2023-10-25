@@ -1,0 +1,40 @@
+.DetaildEmail {
+    flex: 1;
+    border: 0.05rem solid var(--border);
+    height: fit-content;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.DetaildEmail .details {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.DetaildEmail .details .upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DetaildEmail .details button {
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
+    padding: 0.4rem 1.2rem;
+    background: var(--accent);
+    color: #fff;
+}
+
+.DetaildEmail .details .date {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.DetaildEmail .details .description {
+    font-size: 0.88rem;
+}

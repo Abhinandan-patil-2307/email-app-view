@@ -1,38 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --border: #CFD2DC;
+    --accent: #E54065;
+    --text: #636363;
+
+    --emailBackground: #f6f2f2;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .App {
-  text-align: center;
+    padding: 3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .filterOptions {
+    margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .filterOptions span {
+    margin: 0 0.4rem;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .filterOptions span.active {
+    background-color: var(--emailBackground);
+    border: 0.04rem solid var(--border);
 }
 
-.App-link {
-  color: #61dafb;
+.App .emailContainer {
+    display: flex;
+    gap: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .emailContainer .emailsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+/* ------------ */
+.icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent);
+    color: #fff;
+    margin: 0 2rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 100rem;
 }

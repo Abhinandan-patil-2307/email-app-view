@@ -1,0 +1,33 @@
+.Email {
+    border: 0.05rem solid var(--border);
+    border-radius: 1rem;
+    background: #fff;
+    display: flex;
+    padding: .8rem;
+}
+.Email.active{
+    outline: 0.10rem solid var(--accent);
+}
+
+.Email .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.16em;
+}
+
+.Email .details :is( h3 , .date){
+    color: var(--text);
+    font-weight: 500;
+    font-size:0.96rem;
+}
+.Email .details h3 span{
+    color: #000;
+    font-weight: 600;
+}
+.Email .details .description{
+    color: #000;
+}
+.Email .details h4{
+    color: #c333ce;
+
+}
